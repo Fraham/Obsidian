@@ -1,0 +1,1 @@
+Add-ons help to integrate [[EKS]] into the wider [[AWS]] system. They can be easily managed through the [[EKS]] console.

@@ -1,0 +1,1 @@
+A route will tell the [[Transit Gateway]] where to send traffic, it uses the destination [[CIDR]] address.

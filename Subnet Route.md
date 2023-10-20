@@ -1,0 +1,2 @@
+[AWS Documentation](https://docs.aws.amazon.com/vpc/latest/userguide/VPC_Route_Tables.html)
+Provides the routes for a [[Subnet]]. Uses [[CIDR]]s to decide where traffic leaving the [[Subnet]] should go.
