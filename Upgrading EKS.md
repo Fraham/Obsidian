@@ -2,14 +2,14 @@
 
 [[EKS]] has version much like the main [[Kubernetes]]. There will be a delay between the releases to allow [[AWS]] to integrate the new features.
 
-## If using [[EKS Compute EC2]] and not workload groups
+## If using [[EKS - Compute - EC2]] and not workload groups
 
 Assuming using green and blue [[ASG]]s. A ASG refers to the current live [[ASG]], B ASG to the other.
 
 1. Check for any deprecated API versions
 	1. These can be found [here](https://kubernetes.io/docs/reference/using-api/deprecation-guide/)
 	2. Can also use the [[Kubent]] tool
-2. Check for new versions of any [[EKS add-ons]]
+2. Check for new versions of any [[EKS - Add-ons]]
 3. Get the new [[EKS]] version [[AMI]]
 4. Make sure the B is scaled down
 	1. Check for in scale protection
@@ -24,4 +24,4 @@ Assuming using green and blue [[ASG]]s. A ASG refers to the current live [[ASG]]
 11. Update the launch template for A with the new [[AMI]]
 
 
-## If using [[EKS Compute Fargate]]
+## If using [[EKS - Compute - Fargate]]

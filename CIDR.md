@@ -1,0 +1,42 @@
+[Wikipedia](https://en.wikipedia.org/wiki/Classless_Inter-Domain_Routing)
+As known as Classless Inter-Domain Routing
+
+**Classless Inter-Domain Routing** is a method for allocating [IP addresses](https://en.wikipedia.org/wiki/IP_address "IP address") and for [IP routing](https://en.wikipedia.org/wiki/IP_routing "IP routing"). The [Internet Engineering Task Force](https://en.wikipedia.org/wiki/Internet_Engineering_Task_Force "Internet Engineering Task Force") introduced CIDR in 1993 to replace the previous [classful network](https://en.wikipedia.org/wiki/Classful_network "Classful network") addressing architecture on the [Internet](https://en.wikipedia.org/wiki/Internet "Internet"). Its goal was to slow the growth of [routing tables](https://en.wikipedia.org/wiki/Routing_table "Routing table") on [routers](https://en.wikipedia.org/wiki/Router_(computing) "Router (computing)") across the Internet, and to help slow the rapid [exhaustion of IPv4 addresses](https://en.wikipedia.org/wiki/IPv4_address_exhaustion).[](https://en.wikipedia.org/wiki/Classless_Inter-Domain_Routing#cite_note-RFC_1518-1)
+
+# IPv4 CIDR blocks
+
+| Address format | Mask              | Addresses     | Typical use                                                                                                                                           |
+| -------------- | ----------------- | ------------- | ----------------------------------------------------------------------------------------------------------------------------------------------------- |
+| _a.b.c.d/32_   | _255.255.255.255_ | 1             | Host route                                                                                                                                            |
+| _a.b.c.d/31_   | _255.255.255.254_ | 2             | Point-to-point links ([RFC](https://en.wikipedia.org/wiki/RFC_(identifier) "RFC (identifier)") [3021](https://datatracker.ietf.org/doc/html/rfc3021)) |
+| _a.b.c.d/30_   | _255.255.255.252_ | 4             | Point-to-point links (glue network)                                                                                                                   |
+| _a.b.c.d/29_   | _255.255.255.248_ | 8             | Smallest multi-host network                                                                                                                           |
+| _a.b.c.d/28_   | _255.255.255.240_ | 16            | Small [LAN](https://en.wikipedia.org/wiki/LAN "LAN")                                                                                                  |
+| _a.b.c.d/27_   | _255.255.255.224_ | 32            |                                                                                                                                                       |
+| _a.b.c.d/26_   | _255.255.255.192_ | 64            |                                                                                                                                                       |
+| _a.b.c.d/25_   | _255.255.255.128_ | 128           | Large [LAN](https://en.wikipedia.org/wiki/LAN "LAN")                                                                                                  |
+| _a.b.c.0/24_   | _255.255.255.0_   | 256           |                                                                                                                                                       |
+| _a.b.c.0/23_   | _255.255.254.0_   | 512           |                                                                                                                                                       |
+| _a.b.c.0/22_   | _255.255.252.0_   | 1,024         | Small business                                                                                                                                        |
+| _a.b.c.0/21_   | _255.255.248.0_   | 2,048         | Small [ISP](https://en.wikipedia.org/wiki/ISP "ISP")/ large business                                                                                  |
+| _a.b.c.0/20_   | _255.255.240.0_   | 4,096         |                                                                                                                                                       |
+| _a.b.c.0/19_   | _255.255.224.0_   | 8,192         | [ISP](https://en.wikipedia.org/wiki/ISP "ISP")/ large business                                                                                        |
+| _a.b.c.0/18_   | _255.255.192.0_   | 16,384        |                                                                                                                                                       |
+| _a.b.c.0/17_   | _255.255.128.0_   | 32,768        |                                                                                                                                                       |
+| _a.b.0.0/16_   | _255.255.0.0_     | 65,536        |                                                                                                                                                       |
+| _a.b.0.0/15_   | _255.254.0.0_     | 131,072       |                                                                                                                                                       |
+| _a.b.0.0/14_   | _255.252.0.0_     | 262,144       |                                                                                                                                                       |
+| _a.b.0.0/13_   | _255.248.0.0_     | 524,288       |                                                                                                                                                       |
+| _a.b.0.0/12_   | _255.240.0.0_     | 1,048,576     |                                                                                                                                                       |
+| _a.b.0.0/11_   | _255.224.0.0_     | 2,097,152     |                                                                                                                                                       |
+| _a.b.0.0/10_   | _255.192.0.0_     | 4,194,304     |                                                                                                                                                       |
+| _a.b.0.0/9_    | _255.128.0.0_     | 8,388,608     |                                                                                                                                                       |
+| _a.0.0.0/8_    | _255.0.0.0_       | 16,777,216    | Largest [IANA](https://en.wikipedia.org/wiki/Internet_Assigned_Numbers_Authority "Internet Assigned Numbers Authority") block allocation              |
+| _a.0.0.0/7_    | _254.0.0.0_       | 33,554,432    |                                                                                                                                                       |
+| _a.0.0.0/6_    | _252.0.0.0_       | 67,108,864    |                                                                                                                                                       |
+| _a.0.0.0/5_    | _248.0.0.0_       | 134,217,728   |                                                                                                                                                       |
+| _a.0.0.0/4_    | _240.0.0.0_       | 268,435,456   |                                                                                                                                                       |
+| _a.0.0.0/3_    | _224.0.0.0_       | 536,870,912   |                                                                                                                                                       |
+| _a.0.0.0/2_    | _192.0.0.0_       | 1,073,741,824 |                                                                                                                                                       |
+| _a.0.0.0/1_    | _128.0.0.0_       | 2,147,483,648 |                                                                                                                                                       |
+| _0.0.0.0/0_    | _0.0.0.0_         | 4,294,967,296 | Entire IPv4 Internet, [default route](https://en.wikipedia.org/wiki/Default_route "Default route").                                                   |

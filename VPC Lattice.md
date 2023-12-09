@@ -1,0 +1,2 @@
+[AWS Documentation](https://aws.amazon.com/vpc/lattice/)
+Amazon [[VPC]] Lattice is an application networking service that consistently connects, monitors, and secures communications between your services, helping to improve productivity so that your developers can focus on building features that matter to your business. You can define policies for network traffic management, access, and monitoring to connect compute services in a simplified and consistent way across instances, containers, and serverless applications.

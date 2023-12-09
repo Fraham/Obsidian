@@ -1,0 +1,3 @@
+[Terraform Documentation](https://registry.terraform.io/providers/hashicorp/aws/latest/docs/resources/ec2_transit_gateway_route)
+
+A route will tell the [[Transit Gateway]] where to send traffic, it uses the destination [[CIDR]] address. Routes are only normally added when you want traffic to flow indirectly to its destination. This can include sending traffic to [[Traffic Inspection]], egressing all traffic to the internet or blackholing the destination.
